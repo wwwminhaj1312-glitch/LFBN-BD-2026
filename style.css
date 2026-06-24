@@ -26,3 +26,10 @@ font-size:18px;
 .card:hover{
 background:#ffeaea;
 }
+.logo{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+}
