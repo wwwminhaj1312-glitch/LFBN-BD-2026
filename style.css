@@ -20,17 +20,18 @@ body{
     grid-template-columns:repeat(2,1fr);
     gap:12px;
     padding:15px;
+    padding-bottom:100px;
 }
 
 .card{
 background:white;
-border-radius:20px;
-padding:25px 15px;
+border-radius:16px;
+padding:15px 8px;
 text-align:center;
-font-size:18px;
+font-size:15px;
 font-weight:bold;
 color:#c62828;
-box-shadow:0 4px 15px rgba(0,0,0,.15);
+box-shadow:0 3px 10px rgba(0,0,0,.12);
 border:2px solid #ffe5e5;
 }
 
