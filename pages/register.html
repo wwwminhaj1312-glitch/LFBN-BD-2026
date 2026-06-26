@@ -1,32 +1,118 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registration | LFBN-BD 2026</title>
+
+<link rel="stylesheet" href="../style.css">
+
+</head>
+
 <body>
 
-<header class="header">
-    <h2>🩸 LFBN-BD 2026</h2>
-</header>
+<div class="header">
+LFBN-BD 2026
+</div>
 
 <div class="container">
 
-<h2>স্বেচ্ছাসেবী পরিচিতি ফর্ম</h2>
+<h2 style="text-align:center;color:#c62828;">
+📝 স্বেচ্ছাসেবী পরিচিতি ফর্ম
+</h2>
 
 <form>
-
-<div class="input-box">
-<label>👤 নাম</label>
-<input type="text" placeholder="আপনার নাম লিখুন">
+    <div class="input-box">
+<label>👤 পূর্ণ নাম</label>
+<input type="text" placeholder="আপনার পূর্ণ নাম লিখুন" required>
 </div>
 
 <div class="input-box">
-<label>🚻 লিঙ্গ</label>
-<select>
-<option>নির্বাচন করুন</option>
+<label>⚧️ লিঙ্গ</label>
+<select required>
+<option value="">লিঙ্গ নির্বাচন করুন</option>
 <option>পুরুষ</option>
 <option>মহিলা</option>
 <option>অন্যান্য</option>
 </select>
 </div>
 
-</form>
-
+<div class="input-box">
+<label>🩸 রক্তের গ্রুপ</label>
+<select required>
+<option value="">রক্তের গ্রুপ নির্বাচন করুন</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+<option>O+</option>
+<option>O-</option>
+</select>
 </div>
 
-</body>
+<div class="input-box">
+<label>🎂 জন্মতারিখ</label>
+<input type="date" required>
+</div>
+
+<div class="input-box">
+<label>🏠 বর্তমান ঠিকানা</label>
+<input type="text" placeholder="আপনার বর্তমান ঠিকানা লিখুন" required>
+</div>
+
+<div class="input-box">
+<label>🌍 বিভাগ</label>
+<select id="division" required>
+<option value="">বিভাগ নির্বাচন করুন</option>
+</select>
+</div>
+
+<div class="input-box">
+<label>🏙️ জেলা</label>
+<select id="district" required>
+<option value="">প্রথমে বিভাগ নির্বাচন করুন</option>
+</select>
+</div>
+
+<div class="input-box">
+<label>📍 উপজেলা / থানা</label>
+<select id="upazila" required>
+<option value="">প্রথমে জেলা নির্বাচন করুন</option>
+</select>
+</div>
+
+<div class="input-box">
+<label>📱 মোবাইল নম্বর</label>
+<input type="tel" placeholder="01XXXXXXXXX" required>
+</div>
+
+<div class="input-box">
+<label>📧 ইমেইল (ঐচ্ছিক)</label>
+<input type="email" placeholder="example@gmail.com">
+</div>
+
+<div class="input-box">
+<label>❤️ আগে রক্ত দিয়েছেন?</label>
+<select id="donated">
+<option value="">নির্বাচন করুন</option>
+<option value="yes">হ্যাঁ</option>
+<option value="no">না</option>
+</select>
+</div>
+
+<div class="input-box">
+<label>🗓️ সর্বশেষ রক্তদানের তারিখ</label>
+<input type="date" id="lastDonate">
+</div>
+
+<div style="margin:15px 0;">
+<label>
+<input type="checkbox" required>
+ আমি প্রদত্ত সকল তথ্য সঠিক।
+</label>
+</div>
+
