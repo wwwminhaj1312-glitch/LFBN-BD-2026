@@ -68,7 +68,23 @@ const locationData = {"চট্টগ্রাম": {
   "মৌলভীবাজার": [],
   "হবিগঞ্জ": [],
   "সুনামগঞ্জ": []
- };
+"রংপুর": {
+  "রংপুর": [],
+  "দিনাজপুর": [],
+  "ঠাকুরগাঁও": [],
+  "পঞ্চগড়": [],
+  "নীলফামারী": [],
+  "লালমনিরহাট": [],
+  "কুড়িগ্রাম": [],
+  "গাইবান্ধা": []
+},
+
+"ময়মনসিংহ": {
+  "ময়মনসিংহ": [],
+  "জামালপুর": [],
+  "শেরপুর": [],
+  "নেত্রকোনা": []
+};
 const divisionSelect = document.getElementById("division");
 const districtSelect = document.getElementById("district");
 const upazilaSelect = document.getElementById("upazila");
