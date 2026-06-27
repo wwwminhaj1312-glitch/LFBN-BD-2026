@@ -54,7 +54,21 @@ const locationData = {"চট্টগ্রাম": {
   "কুষ্টিয়া": [],
   "চুয়াডাঙ্গা": [],
   "মেহেরপুর": []
-};
+"বরিশাল": {
+  "বরিশাল": [],
+  "ভোলা": [],
+  "পটুয়াখালী": [],
+  "পিরোজপুর": [],
+  "ঝালকাঠি": [],
+  "বরগুনা": []
+},
+
+"সিলেট": {
+  "সিলেট": [],
+  "মৌলভীবাজার": [],
+  "হবিগঞ্জ": [],
+  "সুনামগঞ্জ": []
+ };
 const divisionSelect = document.getElementById("division");
 const districtSelect = document.getElementById("district");
 const upazilaSelect = document.getElementById("upazila");
