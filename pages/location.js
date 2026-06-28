@@ -69,6 +69,8 @@ const locationData = {"চট্টগ্রাম": {
   "কুষ্টিয়া": [],
   "চুয়াডাঙ্গা": [],
   "মেহেরপুর": []
+},
+                      
 "বরিশাল": {
   "বরিশাল": [],
   "ভোলা": [],
@@ -83,6 +85,8 @@ const locationData = {"চট্টগ্রাম": {
   "মৌলভীবাজার": [],
   "হবিগঞ্জ": [],
   "সুনামগঞ্জ": []
+},
+                      
 "রংপুর": {
   "রংপুর": [],
   "দিনাজপুর": [],
@@ -99,6 +103,8 @@ const locationData = {"চট্টগ্রাম": {
   "জামালপুর": [],
   "শেরপুর": [],
   "নেত্রকোনা": []
+}
+                      
 };
 const divisionSelect = document.getElementById("division");
 const districtSelect = document.getElementById("district");
