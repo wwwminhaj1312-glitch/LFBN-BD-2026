@@ -4,7 +4,22 @@
 // ===============================
 
 const locationData = {"চট্টগ্রাম": {
-  "চট্টগ্রাম": [],
+  "চট্টগ্রাম": [
+  "আনোয়ারা",
+  "বাঁশখালী",
+  "বোয়ালখালী",
+  "চন্দনাইশ",
+  "ফটিকছড়ি",
+  "হাটহাজারী",
+  "লোহাগাড়া",
+  "মিরসরাই",
+  "পটিয়া",
+  "রাঙ্গুনিয়া",
+  "রাউজান",
+  "সন্দ্বীপ",
+  "সাতকানিয়া",
+  "সীতাকুণ্ড"
+],
   "কক্সবাজার": [],
   "কুমিল্লা": [],
   "ফেনী": [],
@@ -96,3 +111,51 @@ for (const division in locationData) {
     option.textContent = division;
     divisionSelect.appendChild(option);
 }
+// District Load
+divisionSelect.addEventListener("change", function () {
+
+    districtSelect.innerHTML = '<option value="">জেলা নির্বাচন করুন</option>';
+    upazilaSelect.innerHTML = '<option value="">উপজেলা / থানা নির্বাচন করুন</option>';
+
+    const selectedDivision = this.value;
+
+    if (selectedDivision && locationData[selectedDivision]) {
+
+        for (const district in locationData[selectedDivision]) {
+
+            const option = document.createElement("option");
+            option.value = district;
+            option.textContent = district;
+
+            districtSelect.appendChild(option);
+        }
+    }
+
+});
+  // Upazila Load
+districtSelect.addEventListener("change", function () {
+
+    upazilaSelect.innerHTML = '<option value="">উপজেলা / থানা নির্বাচন করুন</option>';
+
+    const selectedDivision = divisionSelect.value;
+    const selectedDistrict = this.value;
+
+    if (
+        selectedDivision &&
+        selectedDistrict &&
+        locationData[selectedDivision][selectedDistrict]
+    ) {
+
+        locationData[selectedDivision][selectedDistrict].forEach(function(upazila) {
+
+            const option = document.createElement("option");
+            option.value = upazila;
+            option.textContent = upazila;
+
+            upazilaSelect.appendChild(option);
+
+        });
+
+    }
+
+});
