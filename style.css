@@ -230,3 +230,39 @@ body{
     box-shadow:0 8px 20px rgba(0,0,0,.18);
     border:2px solid #ffffff;
     }
+
+/* ===== FOOTER ===== */
+
+.footer{
+    background:#ffffff;
+    margin-top:20px;
+    padding:20px 15px 90px;
+    text-align:center;
+    border-top:1px solid #eeeeee;
+    box-shadow:0 -2px 10px rgba(0,0,0,.08);
+}
+
+.footer p{
+    margin:6px 0;
+    color:#555;
+    font-size:14px;
+}
+
+.footer-links{
+    margin-top:12px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.footer-links a{
+    text-decoration:none;
+    color:#c62828;
+    font-size:14px;
+    font-weight:600;
+}
+
+.footer-links a:hover{
+    text-decoration:underline;
+}
