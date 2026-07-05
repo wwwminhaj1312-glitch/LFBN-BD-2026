@@ -234,12 +234,12 @@ body{
 /* ===== PREMIUM FOOTER ===== */
 
 .footer{
-    margin-top:30px;
+    margin-top:35px;
     padding:30px 20px 95px;
-    background:#ffffff;
-    border-top:1px solid #ececec;
+    background:#fff;
     border-radius:28px 28px 0 0;
     box-shadow:0 -8px 25px rgba(0,0,0,.08);
+    border-top:2px solid #f3f3f3;
     text-align:center;
 }
 
@@ -248,35 +248,55 @@ body{
     font-weight:800;
     color:#c62828;
     letter-spacing:1px;
-    margin-bottom:15px;
+    margin-bottom:18px;
 }
 
 .footer-version{
     display:inline-flex;
     align-items:center;
     gap:8px;
-    background:#ffeaea;
+    background:#ffe8e8;
     color:#c62828;
-    padding:8px 16px;
-    border-radius:50px;
+    padding:8px 18px;
+    border-radius:30px;
     font-size:13px;
     font-weight:700;
-    margin-bottom:20px;
+    margin-bottom:28px;
 }
 
-.footer-developer span{
-    display:block;
+.footer-version i{
+    font-size:14px;
+}
+
+.footer-developer{
+    margin-bottom:28px;
+}
+
+.developer-title{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    color:#777;
     font-size:12px;
-    color:#888;
+    font-weight:700;
     letter-spacing:2px;
-    margin-bottom:6px;
+    margin-bottom:10px;
 }
 
-.footer-developer h3{
-    margin:0 0 20px;
-    font-size:22px;
-    font-weight:800;
-    color:#222;
+.developer-title i{
+    color:#c62828;
+    font-size:15px;
+}
+
+.developer-name{
+    font-size:28px;
+    font-weight:700;
+    font-style:italic;
+    letter-spacing:3px;
+    color:#b71c1c;
+    text-transform:uppercase;
+    text-shadow:1px 1px 2px rgba(0,0,0,.08);
 }
 
 .footer-links{
@@ -284,14 +304,14 @@ body{
     justify-content:center;
     gap:12px;
     flex-wrap:wrap;
-    margin-bottom:20px;
+    margin-bottom:25px;
 }
 
 .footer-links a{
+    text-decoration:none;
     display:flex;
     align-items:center;
     gap:8px;
-    text-decoration:none;
     background:#c62828;
     color:#fff;
     padding:10px 16px;
@@ -299,7 +319,7 @@ body{
     font-size:13px;
     font-weight:700;
     box-shadow:0 4px 12px rgba(198,40,40,.25);
-    transition:.3s;
+    transition:.25s;
 }
 
 .footer-links a:hover{
@@ -309,7 +329,7 @@ body{
 .footer-copy{
     border-top:1px solid #ececec;
     padding-top:15px;
-    font-size:12px;
     color:#888;
+    font-size:12px;
     letter-spacing:.5px;
 }
