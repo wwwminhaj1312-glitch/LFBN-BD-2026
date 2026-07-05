@@ -71,14 +71,21 @@ body{
 
 .card-title{
     font-size:15px;
-    font-weight:600;
-    color:#c62828;
+    font-weight:700;
+    color:#2d2d2d;
+    line-height:1.4;
 }
 
 /* RIGHT ARROW */
 .card-arrow{
     color:#c62828;
-    font-size:18px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.card:hover .card-arrow{
+    transform:translateX(6px);
 }
 
 /* HOVER EFFECT */
