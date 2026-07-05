@@ -44,15 +44,16 @@ body{
 }
 
 .card-icon{
-    width:42px;
-    height:42px;
-    border-radius:12px;
-    background:#ffe5e5;
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#d32f2f,#b71c1c);
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#c62828;
-    font-size:18px;
+    color:#ffffff;
+    font-size:20px;
+    box-shadow:0 6px 16px rgba(211,47,47,.35);
 }
 
 .card-number{
