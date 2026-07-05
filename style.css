@@ -370,23 +370,54 @@ body{
     letter-spacing:.5px;
 }
 
+/* ===== CLEAN SIDE MENU (FIXED) ===== */
+
 .side-menu{
     position:fixed;
     top:0;
-    left:-260px;
+    left:-280px;
     width:260px;
     height:100%;
-    background:#fff;
-    box-shadow:2px 0 15px rgba(0,0,0,.2);
+    background:#ffffff;
+    box-shadow:2px 0 20px rgba(0,0,0,.2);
     padding:20px;
-    transition:.3s;
+    transition:0.3s ease;
+    z-index:2000;
+    overflow-y:auto;
 }
 
 .side-menu a{
-    display:block;
+    display:flex;
+    align-items:center;
+    gap:10px;
     text-decoration:none;
     color:#c62828;
     padding:12px 0;
     font-weight:600;
-    border-bottom:1px solid #eee;
+    border-bottom:1px solid #f2f2f2;
+}
+
+.side-menu a i{
+    width:22px;
+}
+
+/* Overlay (background dark layer) */
+.overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.4);
+    display:none;
+    z-index:1500;
+}
+
+/* Active state */
+.side-menu.active{
+    left:0;
+}
+
+.overlay.active{
+    display:block;
 }
