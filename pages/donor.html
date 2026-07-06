@@ -7,30 +7,159 @@
 
     <title>Find Blood | LFBN-BD 2026</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS (optional external file) -->
     <link rel="stylesheet" href="../css/style.css">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+            background:#f5f6f8;
+        }
+
+        /* HEADER */
+        .find-blood-header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px;
+            background:#e63946;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+        }
+
+        .find-blood-header i{
+            cursor:pointer;
+        }
+
+        /* SEARCH BOX */
+        .search-section{
+            padding:10px;
+        }
+
+        .search-box{
+            display:flex;
+            align-items:center;
+            background:white;
+            padding:10px;
+            border-radius:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .search-box i{
+            margin-right:10px;
+            color:gray;
+        }
+
+        .search-box input{
+            border:none;
+            outline:none;
+            width:100%;
+        }
+
+        /* BLOOD GROUP */
+        .blood-group-filter{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:10px;
+            padding:10px;
+        }
+
+        .blood-group-filter button{
+            padding:10px;
+            border:none;
+            border-radius:8px;
+            background:white;
+            box-shadow:0 2px 5px rgba(0,0,0,0.1);
+            font-weight:bold;
+            cursor:pointer;
+        }
+
+        /* PLACEHOLDER LIST */
+        .donor-card{
+            background:white;
+            margin:10px;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .donor-card h3{
+            margin:0;
+        }
+
+        .donor-card p{
+            margin:5px 0;
+            color:gray;
+        }
+
+        .call-btn{
+            display:inline-block;
+            padding:8px 12px;
+            background:#2a9d8f;
+            color:white;
+            border-radius:5px;
+            text-decoration:none;
+            margin-top:5px;
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-  <div class="find-blood-header">
+<!-- HEADER -->
+<div class="find-blood-header">
 
-    <div class="back-btn">
+    <div>
         <i class="fa-solid fa-arrow-left"></i>
     </div>
 
-    <div class="page-title">
-        🩸 Find Blood
-    </div>
+    <div>🩸 Find Blood</div>
 
-    <div class="search-icon">
+    <div>
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
 
-  </div>
-    
+</div>
+
+<!-- SEARCH -->
+<div class="search-section">
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="নাম, রক্তের গ্রুপ বা জেলা লিখে খুঁজুন...">
+    </div>
+</div>
+
+<!-- BLOOD GROUP FILTER -->
+<div class="blood-group-filter">
+
+    <button>A+</button>
+    <button>A-</button>
+    <button>B+</button>
+    <button>B-</button>
+
+    <button>AB+</button>
+    <button>AB-</button>
+
+    <button>O+</button>
+    <button>O-</button>
+
+</div>
+
+<!-- DONOR CARD (SAMPLE) -->
+<div class="donor-card">
+    <h3>Rahim</h3>
+    <p>🩸 O+ Blood</p>
+    <p>📍 Dhaka</p>
+    <a class="call-btn" href="tel:01700000000">Call</a>
+</div>
+
 </body>
 
 </html>
