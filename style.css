@@ -624,3 +624,27 @@ body {
     border-radius:12px;
     font-weight:700;
     }
+
+/* ===== DONOR CARD PREMIUM ===== */
+
+.donor-card{
+    transition:0.3s ease;
+}
+
+.donor-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.donor-photo{
+    background:#fff;
+    box-shadow:0 4px 15px rgba(229,57,53,.25);
+}
+
+.call-btn:hover{
+    background:#c62828;
+}
+
+.call-btn i{
+    margin-right:8px;
+}
