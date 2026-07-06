@@ -648,3 +648,32 @@ body {
 .call-btn i{
     margin-right:8px;
 }
+
+/* ===== BLOOD REQUEST ===== */
+
+.section-title{
+    margin:25px 18px 15px;
+    font-size:20px;
+    font-weight:700;
+    color:#d32f2f;
+}
+
+.request-card{
+    background:#fff;
+    margin:18px;
+    padding:18px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border-left:5px solid #e53935;
+}
+
+.request-card h3{
+    margin:0 0 10px;
+    color:#222;
+}
+
+.request-card p{
+    margin:8px 0;
+    color:#555;
+    line-height:1.6;
+}
