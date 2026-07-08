@@ -1,27 +1,18 @@
 console.log("LFBN-BD 2026 App Started");
+
 // ===== SAMPLE DONOR DATA =====
 
 const donors = [
-
-{
-    name: "Sample Donor",
-    blood: "O+",
-    district: "Chattogram",
-    phone: "01700000000",
-    status: "Available"
-}
-
+    {
+        name: "Sample Donor",
+        blood: "O+",
+        district: "Chattogram",
+        phone: "01700000000",
+        status: "Available"
+    }
 ];
 
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("input", function () {
-    const keyword = this.value.toLowerCase();
-
-    console.log("Searching:", keyword);
-});
-
-// ===== SHOW DONORS =====
+// ===== DONOR LIST =====
 
 const donorList = document.getElementById("donorList");
 
@@ -39,6 +30,7 @@ function showDonors(list) {
                 <img src="../images/user.png" class="donor-photo" alt="Donor">
 
                 <div class="donor-info">
+
                     <h3>${donor.name}</h3>
 
                     <span class="blood-badge">${donor.blood}</span>
@@ -64,8 +56,32 @@ function showDonors(list) {
 
         </div>
         `;
+
     });
 
 }
 
+// প্রথমবার সব Donor দেখাবে
 showDonors(donors);
+
+// ===== SEARCH =====
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", function () {
+
+    const keyword = this.value.toLowerCase();
+
+    const filteredDonors = donors.filter(donor => {
+
+        return (
+            donor.name.toLowerCase().includes(keyword) ||
+            donor.blood.toLowerCase().includes(keyword) ||
+            donor.district.toLowerCase().includes(keyword)
+        );
+
+    });
+
+    showDonors(filteredDonors);
+
+});
