@@ -12,3 +12,11 @@ const donors = [
 }
 
 ];
+
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", function () {
+    const keyword = this.value.toLowerCase();
+
+    console.log("Searching:", keyword);
+});
