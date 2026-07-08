@@ -20,3 +20,52 @@ searchInput.addEventListener("input", function () {
 
     console.log("Searching:", keyword);
 });
+
+// ===== SHOW DONORS =====
+
+const donorList = document.getElementById("donorList");
+
+function showDonors(list) {
+
+    donorList.innerHTML = "";
+
+    list.forEach(donor => {
+
+        donorList.innerHTML += `
+        <div class="donor-card">
+
+            <div class="donor-top">
+
+                <img src="../images/user.png" class="donor-photo" alt="Donor">
+
+                <div class="donor-info">
+                    <h3>${donor.name}</h3>
+
+                    <span class="blood-badge">${donor.blood}</span>
+
+                    <p>
+                        <i class="fa-solid fa-location-dot"></i>
+                        ${donor.district}
+                    </p>
+
+                    <span class="status available">
+                        <i class="fa-solid fa-circle"></i>
+                        ${donor.status}
+                    </span>
+
+                </div>
+
+            </div>
+
+            <a href="tel:${donor.phone}" class="call-btn">
+                <i class="fa-solid fa-phone"></i>
+                Call Donor
+            </a>
+
+        </div>
+        `;
+    });
+
+}
+
+showDonors(donors);
