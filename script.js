@@ -85,3 +85,21 @@ searchInput.addEventListener("input", function () {
     showDonors(filteredDonors);
 
 });
+
+// ===== BLOOD GROUP FILTER =====
+
+const bloodButtons = document.querySelectorAll(".blood-filter");
+
+bloodButtons.forEach(button => {
+
+    button.addEventListener("click", function () {
+
+        const blood = this.dataset.blood;
+
+        const filteredDonors = donors.filter(donor => donor.blood === blood);
+
+        showDonors(filteredDonors);
+
+    });
+
+});
