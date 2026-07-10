@@ -103,3 +103,54 @@ bloodButtons.forEach(button => {
     });
 
 });
+
+// ===== SAMPLE BLOOD REQUEST DATA =====
+
+const requests = [
+{
+    patient: "Sample Patient",
+    blood: "O+",
+    bags: "2 Bags",
+    hospital: "Chattogram Medical College Hospital",
+    district: "Chattogram",
+    problem: "জরুরি অপারেশনের জন্য রক্ত প্রয়োজন।",
+    phone: "01700000000"
+}
+];
+
+const requestList = document.getElementById("requestList");
+
+function showRequests(list){
+
+    if(!requestList) return;
+
+    requestList.innerHTML = "";
+
+    list.forEach(request => {
+
+        requestList.innerHTML += `
+        <div class="request-card">
+
+            <h3>${request.patient}</h3>
+
+            <p><strong>🩸 Blood Group:</strong> ${request.blood}</p>
+
+            <p><strong>🩸 Bags Needed:</strong> ${request.bags}</p>
+
+            <p><strong>🏥 Hospital:</strong> ${request.hospital}</p>
+
+            <p><strong>📍 District:</strong> ${request.district}</p>
+
+            <p><strong>📝 Problem:</strong> ${request.problem}</p>
+
+            <a href="tel:${request.phone}" class="call-btn">
+                <i class="fa-solid fa-phone"></i> Call Now
+            </a>
+
+        </div>
+        `;
+    });
+
+}
+
+showRequests(requests);
