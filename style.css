@@ -677,3 +677,56 @@ body {
     color:#555;
     line-height:1.6;
 }
+
+/* ===== BLOOD REQUEST PAGE ===== */
+
+.request-container{
+    max-width:600px;
+    margin:20px auto;
+    padding:15px;
+}
+
+.request-container h2{
+    text-align:center;
+    color:#d62828;
+    margin-bottom:20px;
+}
+
+#requestForm{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#requestForm input,
+#requestForm select,
+#requestForm textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:16px;
+    box-sizing:border-box;
+    outline:none;
+}
+
+#requestForm input:focus,
+#requestForm select:focus,
+#requestForm textarea:focus{
+    border-color:#d62828;
+}
+
+#requestForm button{
+    background:#d62828;
+    color:#fff;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+#requestForm button:hover{
+    background:#b71c1c;
+}
