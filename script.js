@@ -181,6 +181,18 @@ if (requestForm) {
             phone
         };
 
+        requests.unshift({
+    patient: patientName,
+    blood: bloodGroup,
+    bags: bags + " Bags",
+    hospital: hospital,
+    district: "Coming Soon",
+    problem: problem,
+    phone: phone
+});
+
+showRequests(requests);
+        
         console.log(requestData);
 
         alert("রক্তের আবেদন সফলভাবে গ্রহণ করা হয়েছে।");
