@@ -730,3 +730,209 @@ body {
 #requestForm button:hover{
     background:#b71c1c;
 }
+
+/* ===========================
+   BLOOD REQUEST HEADER
+=========================== */
+
+.request-header{
+    background:linear-gradient(135deg,#c40000,#ff3b3b);
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:16px 18px;
+    border-radius:0 0 20px 20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.18);
+}
+
+.request-header h1{
+    margin:0;
+    font-size:24px;
+    font-weight:700;
+}
+
+.back-btn{
+    color:#fff;
+    text-decoration:none;
+    font-size:22px;
+}
+
+.header-icon{
+    font-size:22px;
+    color:#fff;
+}
+
+/* ===========================
+   SLOGAN CARD
+=========================== */
+
+.quote-card{
+    background:#fff;
+    margin:18px;
+    padding:18px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.quote-card img{
+    width:65px;
+    height:65px;
+}
+
+.quote-text h2{
+    margin:0;
+    color:#d50000;
+    font-size:21px;
+    font-weight:bold;
+}
+
+.quote-text p{
+    margin-top:6px;
+    color:#555;
+    font-size:15px;
+    line-height:24px;
+}
+
+/* ===========================
+   FORM TITLE
+=========================== */
+
+.form-title{
+    text-align:center;
+    color:#d50000;
+    font-size:24px;
+    margin:20px 0;
+    font-weight:bold;
+    }
+
+/* ===========================
+   REQUEST FORM
+=========================== */
+
+.request-container{
+    background:#ffffff;
+    margin:18px;
+    padding:22px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-size:16px;
+    font-weight:600;
+    color:#333;
+}
+
+.input-box input,
+.input-box select,
+.input-box textarea{
+    width:100%;
+    padding:14px;
+    border:1.5px solid #e0e0e0;
+    border-radius:12px;
+    font-size:15px;
+    outline:none;
+    background:#fafafa;
+    transition:.3s;
+    box-sizing:border-box;
+}
+
+.input-box input:focus,
+.input-box select:focus,
+.input-box textarea:focus{
+    border-color:#d50000;
+    background:#fff;
+    box-shadow:0 0 8px rgba(213,0,0,.15);
+}
+
+.input-box textarea{
+    min-height:110px;
+    resize:vertical;
+}
+
+.warning-box{
+    margin-top:15px;
+    padding:14px;
+    border-radius:12px;
+    background:#fff4e5;
+    border-left:5px solid #ff9800;
+    color:#7a4b00;
+    font-size:14px;
+    line-height:22px;
+}
+
+/* ===========================
+   PUBLISH BUTTON
+=========================== */
+
+.publish-btn{
+    width:100%;
+    padding:16px;
+    margin-top:20px;
+    border:none;
+    border-radius:14px;
+    background:linear-gradient(135deg,#d50000,#ff3b3b);
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(213,0,0,.25);
+}
+
+.publish-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(213,0,0,.35);
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:480px){
+
+    .request-header h1{
+        font-size:22px;
+    }
+
+    .quote-card{
+        margin:15px;
+        padding:15px;
+    }
+
+    .quote-card img{
+        width:55px;
+        height:55px;
+    }
+
+    .quote-text h2{
+        font-size:18px;
+    }
+
+    .quote-text p{
+        font-size:14px;
+    }
+
+    .form-title{
+        font-size:22px;
+    }
+
+    .request-container{
+        margin:15px;
+        padding:18px;
+    }
+
+    .publish-btn{
+        font-size:17px;
+    }
+        }
