@@ -154,3 +154,39 @@ function showRequests(list){
 }
 
 showRequests(requests);
+
+// ===== BLOOD REQUEST FORM =====
+
+const requestForm = document.getElementById("requestForm");
+
+if (requestForm) {
+
+    requestForm.addEventListener("submit", function(e){
+
+        e.preventDefault();
+
+        const patientName = document.getElementById("patientName").value;
+        const bloodGroup = document.getElementById("bloodGroup").value;
+        const bags = document.getElementById("bags").value;
+        const hospital = document.getElementById("hospital").value;
+        const problem = document.getElementById("problem").value;
+        const phone = document.getElementById("phone").value;
+
+        const requestData = {
+            patientName,
+            bloodGroup,
+            bags,
+            hospital,
+            problem,
+            phone
+        };
+
+        console.log(requestData);
+
+        alert("রক্তের আবেদন সফলভাবে গ্রহণ করা হয়েছে।");
+
+        requestForm.reset();
+
+    });
+
+}
