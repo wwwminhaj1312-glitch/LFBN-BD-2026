@@ -813,6 +813,35 @@ body {
    REQUEST FORM
 =========================== */
 
+body{
+    background:#f5f5f5;
+    font-family:Arial,sans-serif;
+}
+
+.request-header{
+    background:linear-gradient(135deg,#d50000,#b00000);
+    color:#fff;
+    padding:18px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-radius:0 0 18px 18px;
+    box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.request-header h1{
+    margin:0;
+    font-size:28px;
+    font-weight:700;
+}
+
+.back-btn,
+.header-icon{
+    color:#fff;
+    font-size:28px;
+    text-decoration:none;
+}
+
 .request-container{
     background:#ffffff;
     margin:18px;
